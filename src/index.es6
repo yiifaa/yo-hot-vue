@@ -1,22 +1,7 @@
-@valueOf
-class Index {
+import Vue from 'vue'
 
-    constructor (name, age) {
-        this.name = name
-        this.age = age
-    }
+console.log(Vue)
 
-    toString () {
-        return `${this.name} is ${this.age}!`
-    }
-
-}
-
-function valueOf(target) {
-    let vo = () => Math.round(Math.random() * 1000)
-    target.prototype.valueOf = vo 
-}
-
-var index = new Index('yiifee', 24);
-alert(index)
-alert(+index)
+new Vue({
+    template : '<h1>Hello, World！</h1>'
+}).$mount('#appRoot')

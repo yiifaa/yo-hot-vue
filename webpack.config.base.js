@@ -9,10 +9,6 @@ module.exports = {
         main : ['./src/index.es6']    
     },
 
-    externals : {
-        vue : 'Vue'
-    },
-
     output : {
         path : dist,
         filename : '[name].bundle.js',
